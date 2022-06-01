@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>손수민 과제2</title>
+    <style>
+        body{margin: 0;}
+        .list{list-style: none; margin: 0; padding: 0;}
+        #map{display: flex; column-gap: 56px; font-size: 18px;}
+        #foot{height: 70px; width: auto; display: flex;align-items: center; font-size: 17px;}
+        #foot ul{display: flex; column-gap: 30px;}
+        li{display: inline;}
+        #top{width: 100%; height: 90px; border: 0.1px black; box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.1); display: flex;align-items: center;justify-content: center;}
+        #main{flex-direction: column;align-items: center; display: flex; justify-content: center;}
+        #id, #pW{width: 440px; height: 56px; border: 1px solid gray; border-radius: 4px; display: flex;align-items: center; font-size: 15px;}
+        #pW{margin-top: 10px;}
+        #id input, #pW input{border: none; padding-left: 15px; width: 100%; height: 50px; padding-top: 3px; padding-bottom: 3px;}
+        #log_in{border: 1px solid black; border-radius: 4px; width: 440px; height: 56px; display: flex;align-items: center;justify-content: center; background-color: blue; color: white; margin-top: 24px; font-size: 18px;}
+        footer{background-color: black; color: white; margin-top: 80px;}
+        #text{height: 298px; width: auto; font-size: 15px;}
+        h1, #find{display: flex;justify-content: center;}
+        a{text-decoration: none;}
+        #map a{color: black;}
+        #foot a, #log_in a{color: white;}
+        #find a{color: black;}
+        #find{font-size: 15px;}
+        #other_path{display: flex; justify-content: center;}
+        #c_login{font-size: 12px; border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 27px; width: 65px; height: 27px; display: flex;align-items: center;justify-content: center;}
+    </style>
+</head>
+<body>
+    <!--맨 위 줄-->
+    <div id="top">
+        <a href="#"><img src="LOGO.PNG" alt="사이트" style="width: 184.15px; height:56px"></a>
+        <img src="HOT.PNG" alt="HOT" style="width: 38px; height:18px; position: absolute; top: 10px; left: 10px;">
+        <ul id="map" class="list">
+            <li class="top_t"><a href="#">수강신청</a></li>
+            <li class="top_t"><a href="#">공지사항</a></li>
+            <li class="top_t"><a href="#">자료실</a></li>
+            <li class="top_t"><a href="#">문제은행</a></li>
+            <li class="top_t"><a href="#">내 강의실</a></li>
+        </ul>
+        <span id="c_login"><a href="#">로그인</a></span>
+        <img src="지구본.PNG" alt="지구본" style="width: 27px; height:27px">
+    </div>
+    <!--그냥 안내 글씨...?-->
+    <div id="main">
+        <div>
+            <h1 style="font-size: 38px;">로그인</h1>
+            <h5 style="font-size: 16px;">로그인 후 다양한 서비스들을 이용해보세요!</h5>
+        </div>
+        
+    
+        <!--로그인 창-->
+        <div>
+            <div id="id">
+                <input type="text"  placeholder="이메일 주소 또는 아이디" title="이메일 주소 또는 아이디">
+            </div>
+            <div id="pW">
+                <input type="text"  placeholder="비밀번호" title="비밀번호">
+            </div>
+            <div style="margin-top: 16px;">
+                <input type="checkbox">
+                <span style="font-size: 15px;">로그인 유지하기</span>
+            </div>
+            <div id="log_in"><a href="#">로그인</a></div>
+            <div style="margin-top: 20px; display: flex; font-size: 12px;"><span>또는</span></div>
+            <div id="other_path">
+                <a href="#"><img src="naver.png.png" alt="네이버" style="width: 40px; height: 40px;"></a>
+                <a href="#"><img src="google.png" alt="구글" style="width: 40px; height: 40px;"></a>
+                <a href="#"><img src="kakao.png" alt="카카오" style="width: 40px; height: 40px;"></a>
+            </div>
+            <div id="find">
+                <span><a href="#">회원가입</a></span>
+                <span><a href="#">ID/PW찾기</a></span>
+            </div>
+        </div>
+    </div>
+</body>
+<footer>
+    <div id="foot">
+        <ul class="list">
+            <li><a href="#">회사소개</a></li>
+            <li><a href="#">이용약관</a></li>
+            <li><a href="#">개인정보처리방침</a></li>
+            <li><a href="#">사이트맵</a></li>
+            <li><a href="#">오시는길</a></li>
+        </ul>
+        <span><a href="#">www.jfkn.com 사이트 바로가기</a></span>
+    </div>
+    <div id="text">
+        <div><img src="뭐지.png" alt="뭐야" style="width: 190px; height: auto;"></div>
+        <span>주소 : 경기도 성남시 분당구 탄천상로 79, 102동 705호 (구미동, 노블빌리지)</span>
+        <span><br>대표자 : 주재현 사업자등록번호 : 128-86-07926 통신판매업체 신고 고양제 1608호 </span>
+        <span><br>고객센터 : 02-544-7861 FAX : 02-544-7865 E-mail : webamaster@jfkn.com</span>
+        <span><br>COPYRIGHT 1990~2022 JFKN CORP.ALL RIGHTS RESERVED</span>
+    </div>
+        <span>
+            <img src="googleplay.png" alt="구글플레이">
+            <img src="appstore.png" alt="앱스토어">
+            <img src="youtube.png" alt="유튜브">
+        </span>
+</footer>
+</html>
